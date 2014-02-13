@@ -16,6 +16,7 @@ public class MultiplierSystem implements ISystem {
 		// TODO Auto-generated method stub
 		for (Node node : ComponentEngine.getNodes("MultiplierNode")) {
 			targets.add((MultiplierNode)node);
+			System.out.println("Found target: " + node.getName());
 		}
 		for (Node node : targets) {
 			RandomComponent random = (RandomComponent)node.components.get("RandomComponent");
