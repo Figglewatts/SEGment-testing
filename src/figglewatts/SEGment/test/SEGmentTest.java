@@ -14,10 +14,12 @@ public class SEGmentTest {
 		object.components.add(randomComponent);
 		object.components.add(randomerComponent);
 		MultiplierNode node = new MultiplierNode();
+		
 		MultiplierSystem system = new MultiplierSystem();
 		ComponentEngine.registerNode(node);
-		ComponentEngine.addSystem(system);
 		ComponentEngine.registerObject(object);
+		ComponentEngine.addSystem(system);
+
 		System.out.println(((RandomerComponent) object.components.get("RandomerComponent")).getNumber());
 	}
 }
