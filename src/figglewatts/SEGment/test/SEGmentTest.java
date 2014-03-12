@@ -3,6 +3,7 @@ package figglewatts.SEGment.test;
 import java.util.ArrayList;
 import java.util.List;
 
+import figglewatts.SEGment.test.tests.CreateComponentTest;
 import figglewatts.SEGment.test.tests.CreateObjectTest;
 
 public class SEGmentTest {
@@ -10,11 +11,12 @@ public class SEGmentTest {
 	
 	public static void main(String[] args) throws Exception {
 		populateList();
-		executeTest(0);
+		executeTest(1);
 	}
 	
 	private static void populateList() {
 		testList.add(new CreateObjectTest());
+		testList.add(new CreateComponentTest());
 	}
 	
 	private static void executeTest(int testNumber) {
