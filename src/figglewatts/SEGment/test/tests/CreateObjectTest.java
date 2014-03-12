@@ -1,13 +1,13 @@
 package figglewatts.SEGment.test.tests;
 
 import figglewatts.SEGment.test.BaseTest;
+import figglewatts.SEGment.test.TestObject;
 
 public class CreateObjectTest extends BaseTest {
 
 	@Override
 	public void Execute() {
-		// TODO Auto-generated method stub
-		
+		TestObject object = new TestObject();
+		System.out.println("Object ID: " + object.getID());
 	}
-
 }

@@ -18,6 +18,8 @@ public class SEGmentTest {
 	}
 	
 	private static void executeTest(int testNumber) {
+		System.out.println("Running test " + testNumber);
 		testList.get(testNumber).Execute();
+		System.out.println("Test " + testNumber + " executed completely.");
 	}
 }
