@@ -7,6 +7,7 @@ import figglewatts.SEGment.test.tests.ComponentDockTest;
 import figglewatts.SEGment.test.tests.CreateComponentTest;
 import figglewatts.SEGment.test.tests.CreateNodeTest;
 import figglewatts.SEGment.test.tests.CreateObjectTest;
+import figglewatts.SEGment.test.tests.CreateSystemTest;
 import figglewatts.SEGment.test.tests.RegisterNodeTest;
 
 public class SEGmentTest {
@@ -14,7 +15,7 @@ public class SEGmentTest {
 	
 	public static void main(String[] args) throws Exception {
 		populateList();
-		executeTest(4);
+		executeTest(5);
 	}
 	
 	private static void populateList() {
@@ -23,6 +24,7 @@ public class SEGmentTest {
 		testList.add(new ComponentDockTest());
 		testList.add(new CreateNodeTest());
 		testList.add(new RegisterNodeTest());
+		testList.add(new CreateSystemTest());
 	}
 	
 	private static void executeTest(int testNumber) throws Exception {
