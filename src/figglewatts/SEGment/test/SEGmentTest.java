@@ -10,13 +10,14 @@ import figglewatts.SEGment.test.tests.CreateObjectTest;
 import figglewatts.SEGment.test.tests.CreateSystemTest;
 import figglewatts.SEGment.test.tests.RegisterNodeTest;
 import figglewatts.SEGment.test.tests.RegisterObjectTest;
+import figglewatts.SEGment.test.tests.SystemStartEndTest;
 
 public class SEGmentTest {
 	private static List<BaseTest> testList = new ArrayList<BaseTest>();
 	
 	public static void main(String[] args) throws Exception {
 		populateList();
-		executeTest(6);
+		executeTest(7);
 	}
 	
 	private static void populateList() {
@@ -27,6 +28,7 @@ public class SEGmentTest {
 		testList.add(new RegisterNodeTest());
 		testList.add(new CreateSystemTest());
 		testList.add(new RegisterObjectTest());
+		testList.add(new SystemStartEndTest());
 	}
 	
 	private static void executeTest(int testNumber) throws Exception {
