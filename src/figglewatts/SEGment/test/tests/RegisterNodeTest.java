@@ -10,8 +10,8 @@ public class RegisterNodeTest extends BaseTest {
 	public void Execute() throws Exception {
 		TestNode node = new TestNode();
 		ComponentEngine.registerNode(node);
-		System.out.println(ComponentEngine.getNodeFromCache(new String[] { "TestComponent" }));
-		System.out.println(ComponentEngine.cacheHasNode(new String[] { "TestComponent" }));
+		System.out.println(ComponentEngine.getNodeFromCache(node.getDependencies()));
+		System.out.println(ComponentEngine.cacheHasNode(node.getDependencies()));
 		System.out.println(ComponentEngine.getNodes("TestNode"));
 	}
 }
