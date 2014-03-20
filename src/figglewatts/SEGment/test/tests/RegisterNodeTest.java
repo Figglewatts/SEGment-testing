@@ -4,7 +4,7 @@ import figglewatts.SEGment.ComponentEngine;
 import figglewatts.SEGment.test.BaseTest;
 import figglewatts.SEGment.test.TestNode;
 
-public class RegisterComponentTest extends BaseTest {
+public class RegisterNodeTest extends BaseTest {
 	
 	@Override
 	public void Execute() throws Exception {
